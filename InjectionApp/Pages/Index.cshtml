@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+   @Model.MarketAciklamasi
+   <p>Bağlantı Adresi <span>@Model.ConnectionAdress.</span></p>
+</div>
+
+<div class="text-center">
+    @foreach(var item in Model.LifeTime)
+    {
+        <p>@item</p>
+        <br />
+
+        
+    }
+</div>
